@@ -42,24 +42,22 @@ Vector3 Vectol::ClosestPoint(const Vector3& point, const Segment& segment) {
 }
 
 void Vectol::Initialize() {
-	segment_ = {
-	    {-2.0f, -1.0f, 0.0f},
-        {3.0f,  2.0f,  2.0f}
-    };
+	//segment_ = {
+	//    {-2.0f, -1.0f, 0.0f},
+ //       {3.0f,  2.0f,  2.0f}
+ //   };
 	point_ = {-1.5f, 0.6f, 0.6f};
 
 	Sphere_.Initialize();
 
-	project_ = project(V3mas_.Subtract(point_, segment_.origin), segment_.diff);
+	//project_ = project(V3mas_.Subtract(point_, segment_.origin), segment_.diff);
 
-	closestPoint_ = ClosestPoint(point_, segment_);
+	//closestPoint_ = ClosestPoint(point_, segment_);
 
 	// 点の描画
 	pointSphere_ = {point_, 0.01f}; // 1cmの弾を描画する
 	closestPiontSphere_ = {closestPoint_, 0.01f};
-	// 線分の描画
-	start_ = MM_.Transform(MM_.Transform(segment_.origin, viewProjectionMatrix_), viewPortMatrix_);
-	end_ = MM_.Transform(MM_.Transform(V3mas_.Add(segment_.origin, segment_.diff), viewProjectionMatrix_), viewPortMatrix_);
+	
 }
 
 void Vectol::Update() {
@@ -68,10 +66,13 @@ void Vectol::Update() {
 #endif // _DEBUG
 }
 
-void Vectol::Draw() {
+void Vectol::Draw(const Segment& segment , uint32_t color, const Matrix4x4& viewProjectionMatrix, const Matrix4x4& viewPortMatrix) {
 	// 点の描画
-	Sphere_.DrawSphere(pointSphere_, viewProjectionMatrix_, viewPortMatrix_, RED);
-	Sphere_.DrawSphere(closestPiontSphere_, viewProjectionMatrix_, viewPortMatrix_, BLACK);
+	//Sphere_.DrawSphere(pointSphere_, viewProjectionMatrix_, viewPortMatrix_, RED);
+	//Sphere_.DrawSphere(closestPiontSphere_, viewProjectionMatrix_, viewPortMatrix_, BLACK);
 	// 線分の描画
-	Novice::DrawLine(int(start_.x), int(start_.y), int(end_.x), int(end_.y), WHITE);
+	// 線分の描画
+	start_ = MM_.Transform(MM_.Transform(segment.origin, viewProjectionMatrix), viewPortMatrix);
+	end_ = MM_.Transform(MM_.Transform(V3mas_.Add(segment.origin, segment.diff), viewProjectionMatrix), viewPortMatrix);
+	Novice::DrawLine(int(start_.x), int(start_.y), int(end_.x), int(end_.y), color);
 }

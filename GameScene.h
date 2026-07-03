@@ -11,6 +11,7 @@
 #include <imgui.h>
 #endif // _DEBUG
 #include "PlaneSphere.h"
+#include "PlaneSegment.h"
 
 
 class GameScene {
@@ -33,6 +34,7 @@ private:
 	RringPlineVer2 RPV2_;
 
 	PlaneSphere planeSphere_;
+	PlaneSegment planeSegment_;
 
 	// カメラ用
 	const Vector3 CameraPos_ = {0.0f, 0.0f, -10.0f};

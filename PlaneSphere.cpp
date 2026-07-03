@@ -52,26 +52,27 @@ void PlaneSphere::DrawPlane(const Plane& plane, const Matrix4x4& viewProjectionM
 void PlaneSphere::Initialize() { 
 	
 	plane_.normal = vector3Mas_.Normalize(plane_.normal);
-	plane_.normal = {0.0f, 1.0f, 0.0f};
-	plane_.distance = 1.0f;
+	//plane_.normal = {0.0f, 1.0f, 0.0f};
+	//plane_.distance = 1.0f;
 
 	// 球の初期化
-	sphere_.center = {0.0f, 1.0f, 0.0f};
-	sphere_.radius = 0.5f;
+	//sphere_.center = {0.0f, 1.0f, 0.0f};
+	//sphere_.radius = 0.5f;
 }
 
 void PlaneSphere::Update() {
 	isCollision_ = IsCollision(sphere_, plane_);
-#ifdef _DEBUG
-	ImGui::DragFloat3("plane.Normal",&plane_.normal.x,0.01f);
-	ImGui::DragFloat3("SphereCenter", &sphere_.center.x, 0.01f);
-	ImGui::DragFloat("SphereRadius", &sphere_.radius, 0.01f);
-#endif // _DEBUG
 }
-
+#ifdef _DEBUG
+void PlaneSphere::ImguiUpdate() {
+	//ImGui::DragFloat3("plane.Normal", &plane_.normal.x, 0.01f);
+	//ImGui::DragFloat3("SphereCenter", &sphere_.center.x, 0.01f);
+	//ImGui::DragFloat("SphereRadius", &sphere_.radius, 0.01f);
+}
+#endif // _DEBUG
 void PlaneSphere::Draw(const Matrix4x4& viewProjectionMatrix, const Matrix4x4& viewPortMatrix) { 
 	
 	DrawPlane(plane_,viewProjectionMatrix,viewPortMatrix,WHITE); 
-	uint32_t color = isCollision_ ? RED : WHITE;
-	grid_.DrawSphere(sphere_,viewProjectionMatrix,viewPortMatrix,color);
+	//uint32_t color = isCollision_ ? RED : WHITE;
+	//grid_.DrawSphere(sphere_,viewProjectionMatrix,viewPortMatrix,color);
 }

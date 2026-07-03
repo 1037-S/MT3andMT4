@@ -33,7 +33,7 @@ public:
 
 	void Initialize();
 	void Update();
-	void Draw();
+	void Draw(const Segment& segment,uint32_t color, const Matrix4x4& viewProjectionMatrix, const Matrix4x4& viewPortMatrix);
 
 private:
 	Matrix4 m4_;
@@ -41,7 +41,7 @@ private:
 	MakeMatrix MM_;
 	WorldM4 wm4_;
 	RringPlineVer2 RPV2_;
-	Segment segment_{};
+	//Segment segment_{};
 	Vector3 point_{};
 	GRID Sphere_;
 	Sphere pointSphere_{};

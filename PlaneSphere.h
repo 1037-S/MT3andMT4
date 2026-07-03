@@ -22,6 +22,9 @@ public:
 
 	void Initialize();
 	void Update();
+#ifdef _DEBUG
+	void ImguiUpdate();
+#endif // _DEBUG
 	void Draw(const Matrix4x4& viewProjectionMatrix, const Matrix4x4& viewPortMatrix);
 
 private:

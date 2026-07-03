@@ -62,6 +62,9 @@
     <Filter Include="MT3\02\02_02">
       <UniqueIdentifier>{82a13aee-146d-42c5-a870-ce2710d11115}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MT3\02\02_03">
+      <UniqueIdentifier>{47510800-9af1-464f-9f9f-1dc2184cda7d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
@@ -105,6 +108,9 @@
     </ClCompile>
     <ClCompile Include="PlaneSphere.cpp">
       <Filter>MT3\02\02_02</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneSegment.cpp">
+      <Filter>MT3\02\02_03</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -227,6 +233,9 @@
     </ClInclude>
     <ClInclude Include="GameScene.h">
       <Filter>ソースファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneSegment.h">
+      <Filter>MT3\02\02_03</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
