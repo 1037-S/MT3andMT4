@@ -10,8 +10,8 @@
 #ifdef _DEBUG
 #include <imgui.h>
 #endif // _DEBUG
-#include "PlaneSphere.h"
-#include "PlaneSegment.h"
+#include "Tangle.h"
+
 
 
 class GameScene {
@@ -29,12 +29,12 @@ private:
 	MakeMatrix MM_;
 	WorldM4 wm4_;
 	GRID grid_;
+	Tangle tangle_; 
 	//POLYGON polygon_;
 	Rotate rtt_;
 	RringPlineVer2 RPV2_;
 
-	PlaneSphere planeSphere_;
-	PlaneSegment planeSegment_;
+	
 
 	// カメラ用
 	const Vector3 CameraPos_ = {0.0f, 0.0f, -10.0f};

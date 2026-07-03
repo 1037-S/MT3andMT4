@@ -119,6 +119,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClCompile Include="Rotate.cpp" />
     <ClCompile Include="RringPlineVer2.cpp" />
     <ClCompile Include="SphereSecond.cpp" />
+    <ClCompile Include="Tangle.cpp" />
     <ClCompile Include="Vectol.cpp" />
     <ClCompile Include="Vector3Mas.cpp" />
     <ClCompile Include="WorldM4.cpp" />
@@ -162,6 +163,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClInclude Include="Rotate.h" />
     <ClInclude Include="RringPlineVer2.h" />
     <ClInclude Include="SphereSecond.h" />
+    <ClInclude Include="Tangle.h" />
     <ClInclude Include="Vectol.h" />
     <ClInclude Include="Vector3Mas.h" />
     <ClInclude Include="WorldM4.h" />
