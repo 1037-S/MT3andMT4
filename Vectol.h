@@ -6,23 +6,7 @@
 #include "Vector3Mas.h"
 #include <cmath>
 
-struct Line // 直線
-{ 
-	Vector3 origin; //!< 始点
-	Vector3 diff;	//!< 終点の差分ベクトル
-};
 
-struct Ray // 半直線
-{
-	Vector3 origin; //!< 始点
-	Vector3 diff;   //!< 終点の差分ベクトル
-};
-
-struct Segment // 線分
-{
-	Vector3 origin; //!< 始点
-	Vector3 diff;   //!< 終点の差分ベクトル
-};
 
 class Vectol :public GRID{
 public:

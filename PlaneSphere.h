@@ -6,12 +6,6 @@
 #include "GRID.h"
 #include "POLYGON.h"
 
-struct Plane // 平面
-{
-	Vector3 normal;	//!< 法線(平面の向き) n
-	float distance; //!< 距離
-};
-
 class PlaneSphere {
 public:
 	

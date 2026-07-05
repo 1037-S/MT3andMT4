@@ -7,11 +7,6 @@
 #include "MakeMatrix.h"
 #include <cmath>
 
-struct Sphere // 球
-{
-	Vector3 center; //!< 球の中心点
-	float radius;	//!< 球の半径
-};
 
 class GRID {
 

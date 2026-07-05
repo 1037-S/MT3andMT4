@@ -68,6 +68,9 @@
     <Filter Include="MT3\02\02_04">
       <UniqueIdentifier>{0f6901df-80c1-48d0-8396-c44aa31f70d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MT3\02\02_05">
+      <UniqueIdentifier>{e0462850-44cb-43ca-9fc5-17959a36b3ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
@@ -117,6 +120,9 @@
     </ClCompile>
     <ClCompile Include="Tangle.cpp">
       <Filter>MT3\02\02_04</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxA.cpp">
+      <Filter>MT3\02\02_05</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +251,9 @@
     </ClInclude>
     <ClInclude Include="Tangle.h">
       <Filter>MT3\02\02_04</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxA.h">
+      <Filter>MT3\02\02_05</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
