@@ -96,8 +96,7 @@ void GRID::DrawSphere(const Sphere& sphere, const Matrix4x4& viewProjectMatrix, 
 }
 
 void GRID::Initialize() {
-	cameraTranslate_ = {0.0f, 1.9f, -6.49f};
-	cameraRotate_ = {0.26f, 0.0f, 0.0f};
+
 
 	sphere_.center = {0.0f,0.0f,0.0f};
 	sphere_.radius = 1.0f;

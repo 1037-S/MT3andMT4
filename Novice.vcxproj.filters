@@ -71,6 +71,9 @@
     <Filter Include="MT3\02\02_05">
       <UniqueIdentifier>{e0462850-44cb-43ca-9fc5-17959a36b3ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MT3\02\02_06">
+      <UniqueIdentifier>{e5705163-8402-4866-a2db-3b2c9362e4da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
@@ -123,6 +126,9 @@
     </ClCompile>
     <ClCompile Include="BoxA.cpp">
       <Filter>MT3\02\02_05</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxToSphere.cpp">
+      <Filter>MT3\02\02_06</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -254,6 +260,9 @@
     </ClInclude>
     <ClInclude Include="BoxA.h">
       <Filter>MT3\02\02_05</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxToSphere.h">
+      <Filter>MT3\02\02_06</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

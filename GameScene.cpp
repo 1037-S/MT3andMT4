@@ -5,19 +5,19 @@ GameScene::~GameScene() {}
 
 void GameScene::Initialize() {
 	grid_.Initialize();
-	box_.Initialize();
+	boxToSphere_.Initialize();
 }
 
 void GameScene::Update(char* keys) {
 
 	grid_.Update();
-	box_.Update();
+	boxToSphere_.Update();
 
 #ifdef _DEBUG
 	 ImGui::Begin("Window");
 	 ImGui::DragFloat3("CameraTranslate", &cameraTranslate_.x, 0.01f);
 	 ImGui::DragFloat3("CameraRotate", &cameraRotate_.x, 0.01f);
-	 box_.ImguiUpdate();
+	 boxToSphere_.ImguiUpdate();
 	 ImGui::End();
 
 	float cameraSpeed = 0.05f;
@@ -67,6 +67,6 @@ void GameScene::Update(char* keys) {
 
 void GameScene::Draw() { 
 	grid_.Draw(viewProjectionMatrix_, viewPortMatrix_);
-	box_.Draw(viewProjectionMatrix_, viewPortMatrix_);
+	boxToSphere_.Draw(viewProjectionMatrix_, viewPortMatrix_);
 	
 }
