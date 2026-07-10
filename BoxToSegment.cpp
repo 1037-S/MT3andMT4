@@ -4,8 +4,9 @@
 #include <Novice.h>
 #include <algorithm>
 #include <cmath>
+#ifdef _DEBUG
 #include <imgui.h>
-
+#endif
 bool BoxToSegment::IsCollision(const AABB& aabb, const Segment& segment) {
 	//float dot = vector3Mas_.Dot(segment.diff,aabb.max);
 

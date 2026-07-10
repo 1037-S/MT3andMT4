@@ -107,6 +107,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bezier3.cpp" />
     <ClCompile Include="BoxA.cpp" />
     <ClCompile Include="BoxToSegment.cpp" />
     <ClCompile Include="BoxToSphere.cpp" />
@@ -129,6 +130,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\DirectXGame\3d\Camera.h" />
+    <ClInclude Include="Bezier3.h" />
     <ClInclude Include="BoxA.h" />
     <ClInclude Include="BoxToSegment.h" />
     <ClInclude Include="BoxToSphere.h" />

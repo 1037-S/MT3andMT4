@@ -77,6 +77,18 @@
     <Filter Include="MT3\02\02_07">
       <UniqueIdentifier>{2b730f48-458c-45b6-bacf-8069f2158075}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MT3\03">
+      <UniqueIdentifier>{899331eb-bb4e-44d1-bd44-dae47fd27f5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MT3\03\03_00">
+      <UniqueIdentifier>{d3f73da0-0162-45b2-8e57-f013f9f7b2f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MT3\03\03_01">
+      <UniqueIdentifier>{03bebb5a-ad04-46a2-bf27-7998eb065cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MT3\03\03_02">
+      <UniqueIdentifier>{b28e0267-eafc-4328-b745-d3d168b94308}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
@@ -135,6 +147,9 @@
     </ClCompile>
     <ClCompile Include="BoxToSegment.cpp">
       <Filter>MT3\02\02_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Bezier3.cpp">
+      <Filter>MT3\03\03_00</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -272,6 +287,9 @@
     </ClInclude>
     <ClInclude Include="BoxToSegment.h">
       <Filter>MT3\02\02_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Bezier3.h">
+      <Filter>MT3\03\03_00</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

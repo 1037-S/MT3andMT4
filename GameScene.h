@@ -10,7 +10,7 @@
 #ifdef _DEBUG
 #include <imgui.h>
 #endif // _DEBUG
-#include "BoxToSegment.h"
+#include "Bezier3.h"
 
 class GameScene {
 public:
@@ -32,8 +32,8 @@ private:
 	Rotate rtt_;
 	RringPlineVer2 RPV2_;
 
-	BoxToSegment boxToSegment_;
-
+	Bezier3 bezier_; 
+	
 	// カメラ用
 	const Vector3 CameraPos_ = {0.0f, 0.0f, -10.0f};
 	Vector3 rotate{};
