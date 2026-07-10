@@ -64,6 +64,7 @@ void Vectol::Update() {
 #ifdef _DEBUG
 	ImGui::InputFloat3("Project", &project_.x, "%.3f", ImGuiInputTextFlags_ReadOnly);
 #endif // _DEBUG
+
 }
 
 void Vectol::Draw(const Segment& segment , uint32_t color, const Matrix4x4& viewProjectionMatrix, const Matrix4x4& viewPortMatrix) {

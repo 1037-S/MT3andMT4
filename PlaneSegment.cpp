@@ -13,12 +13,6 @@ bool PlaneSegment::IsCollision(const Segment& segment, const Plane& plane) {
 
 	float t = (plane.distance - vector3Mas_.Dot(segment.origin, plane.normal)) / dot;
 
-	//if (t == -1.0f) {
-	//	return true;
-	//}
-	//if (t == 2.0f) {
-	//	return true;
-	//}
 
 	return t >= 0.0f && t <= 1.0f;
 }

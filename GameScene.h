@@ -10,7 +10,7 @@
 #ifdef _DEBUG
 #include <imgui.h>
 #endif // _DEBUG
-#include "BoxToSphere.h"
+#include "BoxToSegment.h"
 
 class GameScene {
 public:
@@ -32,7 +32,7 @@ private:
 	Rotate rtt_;
 	RringPlineVer2 RPV2_;
 
-	BoxToSphere boxToSphere_;
+	BoxToSegment boxToSegment_;
 
 	// カメラ用
 	const Vector3 CameraPos_ = {0.0f, 0.0f, -10.0f};

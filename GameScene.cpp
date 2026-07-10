@@ -5,20 +5,20 @@ GameScene::~GameScene() {}
 
 void GameScene::Initialize() {
 	grid_.Initialize();
-	boxToSphere_.Initialize();
+	boxToSegment_.Initialize();
 }
 
 void GameScene::Update(char* keys) {
 
 	grid_.Update();
-	boxToSphere_.Update();
+	boxToSegment_.Update();
 
 #ifdef _DEBUG
-	 ImGui::Begin("Window");
-	 ImGui::DragFloat3("CameraTranslate", &cameraTranslate_.x, 0.01f);
-	 ImGui::DragFloat3("CameraRotate", &cameraRotate_.x, 0.01f);
-	 boxToSphere_.ImguiUpdate();
-	 ImGui::End();
+	ImGui::Begin("Window");
+	ImGui::DragFloat3("CameraTranslate", &cameraTranslate_.x, 0.01f);
+	ImGui::DragFloat3("CameraRotate", &cameraRotate_.x, 0.01f);
+	boxToSegment_.ImguiUpdate();
+	ImGui::End();
 
 	float cameraSpeed = 0.05f;
 	if (keys[DIK_E]) {
@@ -65,8 +65,7 @@ void GameScene::Update(char* keys) {
 	viewPortMatrix_ = RPV2_.MakeViewportMatrix(0, 0, float(KWindowWidth), float(KWindowHeight), 0.0f, 1.0f);
 }
 
-void GameScene::Draw() { 
+void GameScene::Draw() {
 	grid_.Draw(viewProjectionMatrix_, viewPortMatrix_);
-	boxToSphere_.Draw(viewProjectionMatrix_, viewPortMatrix_);
-	
+	boxToSegment_.Draw(viewProjectionMatrix_, viewPortMatrix_);
 }

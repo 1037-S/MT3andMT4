@@ -108,6 +108,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BoxA.cpp" />
+    <ClCompile Include="BoxToSegment.cpp" />
     <ClCompile Include="BoxToSphere.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp" />
     <ClCompile Include="GameScene.cpp" />
@@ -129,6 +130,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
   <ItemGroup>
     <ClInclude Include="..\DirectXGame\3d\Camera.h" />
     <ClInclude Include="BoxA.h" />
+    <ClInclude Include="BoxToSegment.h" />
     <ClInclude Include="BoxToSphere.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\base\StringUtility.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\math\Matrix4x4.h" />
