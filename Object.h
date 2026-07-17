@@ -50,6 +50,8 @@ struct AABB { // 軸平行境界箱(Axis-Allgned Bounding-Box)
 	Vector3 max; //!< 最大点
 };
 
+
+
 static const int kColumnWidth = 60;
 static const int kRowHeight = 20;
 

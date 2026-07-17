@@ -151,6 +151,9 @@
     <ClCompile Include="Bezier3.cpp">
       <Filter>MT3\03\03_00</Filter>
     </ClCompile>
+    <ClCompile Include="Hierarchy.cpp">
+      <Filter>MT3\03\03_01</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
@@ -264,9 +267,6 @@
     <ClInclude Include="Vectol.h">
       <Filter>MT3\02\02_00</Filter>
     </ClInclude>
-    <ClInclude Include="SphereSecond.h">
-      <Filter>MT3\02\02_01</Filter>
-    </ClInclude>
     <ClInclude Include="PlaneSphere.h">
       <Filter>MT3\02\02_02</Filter>
     </ClInclude>
@@ -290,6 +290,12 @@
     </ClInclude>
     <ClInclude Include="Bezier3.h">
       <Filter>MT3\03\03_00</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereSecond.h">
+      <Filter>MT3\02\02_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Hierarchy.h">
+      <Filter>MT3\03\03_01</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

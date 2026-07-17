@@ -8,21 +8,7 @@
 #include <imgui.h>
 #endif
 bool BoxToSegment::IsCollision(const AABB& aabb, const Segment& segment) {
-	//float dot = vector3Mas_.Dot(segment.diff,aabb.max);
-
-	//float tXmin = (aabb.min.x - segment.origin.x) / segment.origin.x;
-	//float tXmax = (aabb.max.x - segment.origin.x) / segment.diff.x;
-	//float tYmin = (aabb.min.y - segment.origin.y) / segment.origin.y;
-	//float tYmax = (aabb.max.y - segment.origin.y) / segment.diff.y;
-	//float tZmin = (aabb.min.z - segment.origin.z) / segment.origin.z;
-	//float tZmax = (aabb.max.z - segment.origin.z) / segment.diff.z;
-
-	//float tNearX = std::min(tXmin, tXmax);
-	//float tNearY = std::min(tYmin, tYmax);
-	//float tNearZ = std::min(tZmin, tZmax);
-	//float tFarX = std::max(tXmin, tXmax);
-	//float tFarY = std::max(tYmin, tYmax);
-	//float tFarZ = std::max(tZmin, tZmax);
+	
 	//  各軸のtの最小・最大値を保持する変数
 	float tNearX, tFarX, tNearY, tFarY, tNearZ, tFarZ;
 

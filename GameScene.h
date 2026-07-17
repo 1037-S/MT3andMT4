@@ -10,7 +10,7 @@
 #ifdef _DEBUG
 #include <imgui.h>
 #endif // _DEBUG
-#include "Bezier3.h"
+#include "Hierarchy.h"
 
 class GameScene {
 public:
@@ -32,7 +32,7 @@ private:
 	Rotate rtt_;
 	RringPlineVer2 RPV2_;
 
-	Bezier3 bezier_; 
+	Hierarchy hierarchy_; 
 	
 	// カメラ用
 	const Vector3 CameraPos_ = {0.0f, 0.0f, -10.0f};
