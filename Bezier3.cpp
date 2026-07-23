@@ -52,6 +52,7 @@ void Bezier3::DrawBezier(
 }
 
 void Bezier3::Initialize() {
+	
 	controlPoints_[0] = {-0.8f, 0.58f, 1.0f};
 	controlPoints_[1] = {1.76f, 1.0f, -0.3f};
 	controlPoints_[2] = {0.94f, -0.7f, -0.3f};

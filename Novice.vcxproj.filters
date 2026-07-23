@@ -154,6 +154,9 @@
     <ClCompile Include="Hierarchy.cpp">
       <Filter>MT3\03\03_01</Filter>
     </ClCompile>
+    <ClCompile Include="OverRood.cpp">
+      <Filter>MT3\03\03_02</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
@@ -296,6 +299,9 @@
     </ClInclude>
     <ClInclude Include="Hierarchy.h">
       <Filter>MT3\03\03_01</Filter>
+    </ClInclude>
+    <ClInclude Include="OverRood.h">
+      <Filter>MT3\03\03_02</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

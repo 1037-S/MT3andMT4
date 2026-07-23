@@ -118,6 +118,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MakeMatrix.cpp" />
     <ClCompile Include="Matrix4.cpp" />
+    <ClCompile Include="OverRood.cpp" />
     <ClCompile Include="PlaneSegment.cpp" />
     <ClCompile Include="PlaneSphere.cpp" />
     <ClCompile Include="POLYGON.cpp" />
@@ -167,6 +168,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClInclude Include="MakeMatrix.h" />
     <ClInclude Include="Matrix4.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="OverRood.h" />
     <ClInclude Include="PlaneSegment.h" />
     <ClInclude Include="PlaneSphere.h" />
     <ClInclude Include="POLYGON.h" />

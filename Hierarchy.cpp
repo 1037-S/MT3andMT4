@@ -5,6 +5,7 @@
 #include <Novice.h>
 
 void Hierarchy::Initialize() {
+	
 	transletes_[0] = {0.2f, 1.0f, 0.0f};
 	transletes_[1] = {0.4f, 0.0f, 0.0f};
 	transletes_[2] = {0.3f, 0.0f, 0.0f};
