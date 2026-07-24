@@ -15,7 +15,7 @@ public:
 #endif // _DEBUG
 	void Draw();
 
-	
+
 
 private:
 	Rotate rotate_;
