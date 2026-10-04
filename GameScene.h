@@ -6,11 +6,12 @@
 //#include "POLYGON.h"
 #include "GRID.h"
 #include "MakeMatrix.h"
+#include "GameMachMT4.h"
 #include <cmath>
 #ifdef _DEBUG
 #include <imgui.h>
 #endif // _DEBUG
-#include "OverRood.h"
+//#include "OverRood.h"
 
 class GameScene {
 public:
@@ -27,12 +28,13 @@ private:
 	MakeMatrix MM_;
 	WorldM4 wm4_;
 	GRID grid_;
+	GameMachMT4 gM4_;
 
 	//POLYGON polygon_;
 	Rotate rtt_;
 	RringPlineVer2 RPV2_;
 
-	OverRood overRood_;
+	//OverRood overRood_;
 	
 	// カメラ用
 	const Vector3 CameraPos_ = {0.0f, 0.0f, -10.0f};

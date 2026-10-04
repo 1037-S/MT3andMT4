@@ -34,7 +34,7 @@ void PlaneSphere::DrawPlane(const Plane& plane, const Matrix4x4& viewProjectionM
 	Vector3 perpendiculars[4];
 	perpendiculars[0] = vector3Mas_.Normalize(Perpendicular(plane.normal));                 // その2
 	perpendiculars[1] = {-perpendiculars[0].x, -perpendiculars[0].y, -perpendiculars[0].z}; // その3
-	perpendiculars[2] = POLYGON_.Closs(plane.normal, perpendiculars[0]);                    // その4
+	perpendiculars[2] = POLYGON_.Cross(plane.normal, perpendiculars[0]);                    // その4
 	perpendiculars[3] = {-perpendiculars[2].x, -perpendiculars[2].y, -perpendiculars[2].z}; // その5
 	// その6
 	Vector3 points[4];

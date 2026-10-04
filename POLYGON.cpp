@@ -5,7 +5,7 @@ POLYGON::~POLYGON() {}
 
 
 // クロス積(外積)(ベクトル積とも呼ばれる)
-Vector3 POLYGON::Closs(const Vector3& v1, const Vector3& v2) { 
+Vector3 POLYGON::Cross(const Vector3& v1, const Vector3& v2) { 
 	Vector3 result = {};
 	
 	result.x = (v1.y * v2.z - v1.z * v2.y);	
@@ -18,7 +18,7 @@ Vector3 POLYGON::Closs(const Vector3& v1, const Vector3& v2) {
 void POLYGON::Initialize() { 
 	v1_ = {1.2f,-3.9f,2.5f};
 	v2_ = {2.8f,0.4f,-1.3f};
-	cross_ = Closs(v1_, v2_);
+	cross_ = Cross(v1_, v2_);
 }
 
 void POLYGON::Update(char* keys) {

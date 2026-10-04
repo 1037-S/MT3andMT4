@@ -20,6 +20,16 @@ struct Vector3 {
 		z += v.z;
 		return *this;
 	}
+	Vector3 operator+ (const Vector3& v) 
+	{
+		Vector3 result;
+		result.x = x + v.x;
+		result.y = y + v.y;
+		result.z = z + v.z;
+
+		return result;
+	}
+
 	Vector3& operator-=(const Vector3& v) {
 		x -= v.x;
 		y -= v.y;
@@ -75,6 +85,17 @@ struct AABB { // 軸平行境界箱(Axis-Allgned Bounding-Box)
 	Vector3 max; //!< 最大点
 };
 
+struct OBB {
+	Vector3 center;				//!< 中心点
+	Vector3 orientations[3];	//!< 座標軸。正規化・直交必須
+	Vector3 size;               //!< 座標軸方向の長さの半分。　中心から面までの距離
+};
+
+struct Spherical {
+	float radius;	// 動経 r
+	float theta;	// 抑角 θ
+	float phi;		// 方位角 φ
+};
 
 
 static const int kColumnWidth = 60;

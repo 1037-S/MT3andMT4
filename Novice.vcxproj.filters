@@ -89,6 +89,18 @@
     <Filter Include="MT3\03\03_02">
       <UniqueIdentifier>{b28e0267-eafc-4328-b745-d3d168b94308}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MT3\02\02_08">
+      <UniqueIdentifier>{6b212250-abe0-4e0e-a458-bcfb88b09214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MT3\02\02_09">
+      <UniqueIdentifier>{3346d1ec-e37c-4de5-8c34-aebc5e6b1ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MT3\02\02_10">
+      <UniqueIdentifier>{34959168-28df-47c0-912e-0075cf8882ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MT4">
+      <UniqueIdentifier>{8a7f67da-3cb1-4f6b-a11b-b006e5a545db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
@@ -156,6 +168,12 @@
     </ClCompile>
     <ClCompile Include="OverRood.cpp">
       <Filter>MT3\03\03_02</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxtoSphere2.cpp">
+      <Filter>MT3\02\02_08</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMachMT4.cpp">
+      <Filter>MT4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -302,6 +320,12 @@
     </ClInclude>
     <ClInclude Include="OverRood.h">
       <Filter>MT3\03\03_02</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxtoSphere2.h">
+      <Filter>MT3\02\02_08</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMachMT4.h">
+      <Filter>MT4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

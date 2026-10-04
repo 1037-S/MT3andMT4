@@ -38,9 +38,9 @@ bool Tangle::IsCollision(const Triangle& triangle, const Segment& segment , cons
 	Vector3 v2p = vector3Mas_.Subtract(p, triangle.vertices[2]);
 
 
-	Vector3 closs01 = closs_.Closs(v01,v0p);
-	Vector3 closs12 = closs_.Closs(v12,v1p);
-	Vector3 closs20 = closs_.Closs(v20,v2p);
+	Vector3 closs01 = closs_.Cross(v01,v0p);
+	Vector3 closs12 = closs_.Cross(v12,v1p);
+	Vector3 closs20 = closs_.Cross(v20,v2p);
 	
 	if (
 		vector3Mas_.Dot(closs01,plane.normal) >= 0.0f&&
