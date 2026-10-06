@@ -36,6 +36,9 @@ private:
 	Vector3 target = {0.0f, 0.0f, 0.0f}; // 注視点(原点)
 	Vector3 eye ;
 
+	float t;
+	Vector3 camera_;
+
 	float r_;
 	float sinTheta_;
 	float phi_;
@@ -49,4 +52,12 @@ private:
 
 	Matrix4x4 cameraMatrix;
 
+	int mousePosX;
+	int mousePosY;
+
+	Vector2 redPos;
+	Vector2 greenPos;
+	// 追従補間
+	const float kDeltaTime = 1.0f / 60.0f; // 60fps固定の1フレーム時間
+	float speed;                    // 追従速度（お好みの値に調整可能）
 };

@@ -69,5 +69,5 @@ void GameScene::Update(char* keys) {
 
 void GameScene::Draw() {
 	grid_.Draw(viewProjectionMatrix_, viewPortMatrix_);
-	
+	gM4_.Draw();
 }
