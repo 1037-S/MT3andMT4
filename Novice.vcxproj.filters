@@ -101,6 +101,9 @@
     <Filter Include="MT4">
       <UniqueIdentifier>{8a7f67da-3cb1-4f6b-a11b-b006e5a545db}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MT4\01">
+      <UniqueIdentifier>{53b3f2f2-661c-472e-8c2b-6f7abbda0bda}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
@@ -172,8 +175,11 @@
     <ClCompile Include="BoxtoSphere2.cpp">
       <Filter>MT3\02\02_08</Filter>
     </ClCompile>
-    <ClCompile Include="GameMachMT4.cpp">
+    <ClCompile Include="CameraMT4.cpp">
       <Filter>MT4</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>MT4\01</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -324,8 +330,11 @@
     <ClInclude Include="BoxtoSphere2.h">
       <Filter>MT3\02\02_08</Filter>
     </ClInclude>
-    <ClInclude Include="GameMachMT4.h">
+    <ClInclude Include="CameraMT4.h">
       <Filter>MT4</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>MT4\01</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

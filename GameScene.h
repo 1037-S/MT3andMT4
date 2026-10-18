@@ -6,7 +6,8 @@
 //#include "POLYGON.h"
 #include "GRID.h"
 #include "MakeMatrix.h"
-#include "GameMachMT4.h"
+//#include "CameraMT4.h"
+#include "Quaternion.h"
 #include <cmath>
 #ifdef _DEBUG
 #include <imgui.h>
@@ -28,7 +29,8 @@ private:
 	MakeMatrix MM_;
 	WorldM4 wm4_;
 	GRID grid_;
-	GameMachMT4 gM4_;
+	//CameraMT4 gM4_;
+	QuaternionClass quaternion_;
 
 	//POLYGON polygon_;
 	Rotate rtt_;

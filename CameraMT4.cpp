@@ -1,8 +1,8 @@
-#include "GameMachMT4.h"
+#include "CameraMT4.h"
 #include <Novice.h>
 
 
-Spherical GameMachMT4::ToSpherical(const Vector3 p) {
+Spherical CameraMT4::ToSpherical(const Vector3 p) {
 	r_ = std::sqrt(p.x * p.x + p.y * p.y + p.z * p.z);
 	if (r_ == 0){
 		return {0.0f, 0.0f, 0.0f};
@@ -17,7 +17,7 @@ Spherical GameMachMT4::ToSpherical(const Vector3 p) {
 }
 
 // 球面座標系
-Vector3 GameMachMT4::ToCartesian(const Spherical s) {
+Vector3 CameraMT4::ToCartesian(const Spherical s) {
 	float rho = s.radius * std::cos(s.theta);
 
 	return {
@@ -27,7 +27,7 @@ Vector3 GameMachMT4::ToCartesian(const Spherical s) {
 	};
 }
 
-void GameMachMT4::Initialize() { 
+void CameraMT4::Initialize() { 
 	
 	greenPos = {KWindowWidth/2, KWindowHeight/2};
 	speed = 5.0f;
@@ -35,7 +35,7 @@ void GameMachMT4::Initialize() {
 	//s_.theta = std::clamp(s_.theta, -limit, limit);
 }
 #ifdef _DEBUG
-void GameMachMT4::ImguiUpdate() {
+void CameraMT4::ImguiUpdate() {
 	//ImGui::Text("Target Position: (%.3f, %.3f, %.3f)/ +Y up / Camera +z forward", target.x, target.y, target.z);
 	ImGui::Text("TargetMouse Position (Red Circle)");
 	ImGui::Separator();
@@ -76,7 +76,7 @@ void GameMachMT4::ImguiUpdate() {
 }
 #endif // _DEBUG
 
-void GameMachMT4::Update() {
+void CameraMT4::Update() {
 	pos = ToCartesian(s_);
 	eye = pos + target;
 
@@ -101,7 +101,7 @@ void GameMachMT4::Update() {
 	 
 }
 
-void GameMachMT4::Draw() {
+void CameraMT4::Draw() {
 	Novice::DrawLine(static_cast<int>(greenPos.x), static_cast<int>(greenPos.y), static_cast<int>(redPos.x), static_cast<int>(redPos.y), WHITE);
 	Novice::DrawEllipse(static_cast<int>(greenPos.x), static_cast<int>(greenPos.y), 20, 20, 0.0f, GREEN, kFillModeSolid);
 	Novice::DrawEllipse(static_cast<int>(redPos.x), static_cast<int>(redPos.y), 12, 12, 0.0f, RED, kFillModeSolid); }

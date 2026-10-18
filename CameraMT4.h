@@ -9,7 +9,7 @@
 #include <imgui.h>
 #endif // _DEBUG
 
-class GameMachMT4 {
+class CameraMT4 {
 
 public:
 	Spherical ToSpherical(const Vector3 p);

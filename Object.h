@@ -20,8 +20,7 @@ struct Vector3 {
 		z += v.z;
 		return *this;
 	}
-	Vector3 operator+ (const Vector3& v) 
-	{
+	Vector3 operator+(const Vector3& v) {
 		Vector3 result;
 		result.x = x + v.x;
 		result.y = y + v.y;
@@ -48,6 +47,38 @@ struct Vector3 {
 		z /= s;
 		return *this;
 	}
+};
+
+struct Quaternion {
+	float x;
+	float y;
+	float z;
+	float w;
+
+	// q=w+xi+yj+zk
+	// q=(qw,qv)
+	// qw=(x,y,z)
+	// qv=(w)
+
+	Quaternion operator+(const Quaternion& v) {
+		Quaternion result;
+		result.x = x + v.x;
+		result.y = y + v.y;
+		result.z = z + v.z;
+		result.w = w + v.w;
+
+		return result;
+	}
+	Quaternion operator-(const Quaternion& v) {
+		Quaternion result;
+		result.x = x - v.x;
+		result.y = y - v.y;
+		result.z = z - v.z;
+		result.w = w - v.w;
+
+		return result;
+	}
+
 };
 
 struct Sphere // 球
@@ -80,23 +111,22 @@ struct Plane // 平面
 	float distance; //!< 距離
 };
 
-struct AABB { // 軸平行境界箱(Axis-Allgned Bounding-Box)
+struct AABB {    // 軸平行境界箱(Axis-Allgned Bounding-Box)
 	Vector3 min; //!< 最小点
 	Vector3 max; //!< 最大点
 };
 
 struct OBB {
-	Vector3 center;				//!< 中心点
-	Vector3 orientations[3];	//!< 座標軸。正規化・直交必須
-	Vector3 size;               //!< 座標軸方向の長さの半分。　中心から面までの距離
+	Vector3 center;          //!< 中心点
+	Vector3 orientations[3]; //!< 座標軸。正規化・直交必須
+	Vector3 size;            //!< 座標軸方向の長さの半分。　中心から面までの距離
 };
 
 struct Spherical {
-	float radius;	// 動経 r
-	float theta;	// 抑角 θ
-	float phi;		// 方位角 φ
+	float radius; // 動経 r
+	float theta;  // 抑角 θ
+	float phi;    // 方位角 φ
 };
-
 
 static const int kColumnWidth = 60;
 static const int kRowHeight = 20;

@@ -5,19 +5,19 @@ GameScene::~GameScene() {}
 
 void GameScene::Initialize() {
 	grid_.Initialize();
-	gM4_.Initialize();
+	quaternion_.Initialize();
 }
 
 void GameScene::Update(char* keys) {
 
 	grid_.Update();
-	gM4_.Update();
+	quaternion_.Update();
 
 #ifdef _DEBUG
 	ImGui::Begin("Window");
 	//ImGui::DragFloat3("CameraTranslate", &cameraTranslate_.x, 0.01f);
 	//ImGui::DragFloat3("CameraRotate", &cameraRotate_.x, 0.01f);
-	gM4_.ImguiUpdate();
+	
 	ImGui::End();
 
 	//overRood_.ImguiUpdate();
@@ -69,5 +69,5 @@ void GameScene::Update(char* keys) {
 
 void GameScene::Draw() {
 	grid_.Draw(viewProjectionMatrix_, viewPortMatrix_);
-	gM4_.Draw();
+	quaternion_.Draw();
 }
