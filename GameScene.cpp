@@ -5,13 +5,13 @@ GameScene::~GameScene() {}
 
 void GameScene::Initialize() {
 	grid_.Initialize();
-	quaternion_.Initialize();
+	qRptate_.Initialize();
 }
 
 void GameScene::Update(char* keys) {
 
 	grid_.Update();
-	quaternion_.Update();
+	qRptate_.Update();
 
 #ifdef _DEBUG
 	ImGui::Begin("Window");
@@ -69,5 +69,5 @@ void GameScene::Update(char* keys) {
 
 void GameScene::Draw() {
 	grid_.Draw(viewProjectionMatrix_, viewPortMatrix_);
-	quaternion_.Draw();
+	qRptate_.Draw();
 }

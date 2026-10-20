@@ -1,5 +1,5 @@
 #include "Rotate.h"
-#include <Novice.h>
+
 
 Rotate::~Rotate() {}
 // 1.X軸回転行列

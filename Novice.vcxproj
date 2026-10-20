@@ -125,6 +125,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClCompile Include="PlaneSphere.cpp" />
     <ClCompile Include="POLYGON.cpp" />
     <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="QuaternionRotate.cpp" />
     <ClCompile Include="Rotate.cpp" />
     <ClCompile Include="RringPlineVer2.cpp" />
     <ClCompile Include="SphereSecond.cpp" />
@@ -178,6 +179,7 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClInclude Include="PlaneSphere.h" />
     <ClInclude Include="POLYGON.h" />
     <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="QuaternionRotate.h" />
     <ClInclude Include="Rotate.h" />
     <ClInclude Include="RringPlineVer2.h" />
     <ClInclude Include="SphereSecond.h" />

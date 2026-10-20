@@ -7,7 +7,7 @@
 #include "GRID.h"
 #include "MakeMatrix.h"
 //#include "CameraMT4.h"
-#include "Quaternion.h"
+#include "QuaternionRotate.h"
 #include <cmath>
 #ifdef _DEBUG
 #include <imgui.h>
@@ -30,7 +30,8 @@ private:
 	WorldM4 wm4_;
 	GRID grid_;
 	//CameraMT4 gM4_;
-	QuaternionClass quaternion_;
+	//QuaternionClass quaternion_;
+	QuaternionRotate qRptate_;
 
 	//POLYGON polygon_;
 	Rotate rtt_;

@@ -195,7 +195,7 @@ void Matrix4::MatrixScreenPrintf(int x, int y,
 	Novice::ScreenPrintf(x, y - 20, "%s", label);
 	for (int row = 0; row < 4; row++) {
 		for (int column = 0; column < 4; column++) {
-			Novice::ScreenPrintf(x + column * kColumnWidth, y + row * kRowHeight, "%6.02f", matrix.m[row][column], label);
+			Novice::ScreenPrintf(x + column * kColumnWidth, y + row * kRowHeight, "%6.03f", matrix.m[row][column], label);
 		}
 	}
 }

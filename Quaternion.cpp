@@ -125,11 +125,11 @@ void QuaternionClass::Draw() {
 	// VectorScreenPrintf(0, 0, resultAdd_, " : Add");
 	// VectorScreenPrintf(0, kRowHeight, resultSubtract_, ": Subtract");
 	// VectorScreenPrintf(0, kRowHeight * 2, resultMultiply_, ": Multiply");
-	QuaternionScreenPrintf(0, 0, identity_ ,": Identity");
-	QuaternionScreenPrintf(0, kRowHeight, conj_, ": Conjugate");
-	QuaternionScreenPrintf(0, kRowHeight * 2, inv_, ": Inverase");
-	QuaternionScreenPrintf(0, kRowHeight * 3, normal_, ": Normalize");
-	QuaternionScreenPrintf(0, kRowHeight * 4, mul1_, ": Multiply(q1_, q2_)");
-	QuaternionScreenPrintf(0, kRowHeight * 5, mul2_, ": Multiply(q2_, q1_)");
-	Novice::ScreenPrintf(0, kRowHeight * 6, "%.02f : Norm", norm_);
+	//QuaternionScreenPrintf(0, 0, identity_ ,": Identity");
+	//QuaternionScreenPrintf(0, kRowHeight, conj_, ": Conjugate");
+	//QuaternionScreenPrintf(0, kRowHeight * 2, inv_, ": Inverase");
+	//QuaternionScreenPrintf(0, kRowHeight * 3, normal_, ": Normalize");
+	//QuaternionScreenPrintf(0, kRowHeight * 4, mul1_, ": Multiply(q1_, q2_)");
+	//QuaternionScreenPrintf(0, kRowHeight * 5, mul2_, ": Multiply(q2_, q1_)");
+	//Novice::ScreenPrintf(0, kRowHeight * 6, "%.02f : Norm", norm_);
 }
