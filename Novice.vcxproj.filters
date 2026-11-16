@@ -104,11 +104,14 @@
     <Filter Include="MT4\01">
       <UniqueIdentifier>{53b3f2f2-661c-472e-8c2b-6f7abbda0bda}</UniqueIdentifier>
     </Filter>
-    <Filter Include="MT4\01\01_01">
+    <Filter Include="MT4\01\01_00">
       <UniqueIdentifier>{a05e9857-3fb5-46db-ba00-f36bdc1fe743}</UniqueIdentifier>
     </Filter>
-    <Filter Include="MT4\01\01_02">
+    <Filter Include="MT4\01\01_01">
       <UniqueIdentifier>{4417ffdb-b2cd-4842-9c52-933e97f325e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MT4\01\01_02">
+      <UniqueIdentifier>{d46bd75f-65ec-4a69-b3d2-14d1643751f1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -185,9 +188,12 @@
       <Filter>MT4</Filter>
     </ClCompile>
     <ClCompile Include="Quaternion.cpp">
-      <Filter>MT4\01\01_01</Filter>
+      <Filter>MT4\01\01_00</Filter>
     </ClCompile>
     <ClCompile Include="QuaternionRotate.cpp">
+      <Filter>MT4\01\01_01</Filter>
+    </ClCompile>
+    <ClCompile Include="QuatenionDirection.cpp">
       <Filter>MT4\01\01_02</Filter>
     </ClCompile>
   </ItemGroup>
@@ -343,9 +349,12 @@
       <Filter>MT4</Filter>
     </ClInclude>
     <ClInclude Include="Quaternion.h">
-      <Filter>MT4\01\01_01</Filter>
+      <Filter>MT4\01\01_00</Filter>
     </ClInclude>
     <ClInclude Include="QuaternionRotate.h">
+      <Filter>MT4\01\01_01</Filter>
+    </ClInclude>
+    <ClInclude Include="QuatenionDirection.h">
       <Filter>MT4\01\01_02</Filter>
     </ClInclude>
   </ItemGroup>
