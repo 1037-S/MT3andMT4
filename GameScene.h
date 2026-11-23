@@ -7,8 +7,8 @@
 #include "GRID.h"
 #include "MakeMatrix.h"
 //#include "CameraMT4.h"
-//#include "QuaternionRotate.h"
-#include "QuatenionDirection.h"
+#include "QuaternionRotate2.h"
+//#include "QuatenionDirection.h"
 #include <cmath>
 #ifdef _DEBUG
 #include <imgui.h>
@@ -32,8 +32,8 @@ private:
 	GRID grid_;
 	//CameraMT4 gM4_;
 	//QuaternionClass quaternion_;
-	//QuaternionRotate qRotate_;
-	QuatenionDirection qDirection_;
+	QuaternionRotate2 qRotate_;
+	//QuatenionDirection qDirection_;
 
 	//POLYGON polygon_;
 	Rotate rtt_;

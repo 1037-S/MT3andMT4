@@ -71,8 +71,9 @@ struct Quaternion {
 	// q=(qw,qv)
 	// qw=(x,y,z)
 	// qv=(w)
-
-	Quaternion operator+(const Quaternion& v) {
+	
+	
+	Quaternion operator+(const Quaternion& v)const {
 		Quaternion result;
 		result.x = x + v.x;
 		result.y = y + v.y;
@@ -81,7 +82,7 @@ struct Quaternion {
 
 		return result;
 	}
-	Quaternion operator-(const Quaternion& v) {
+	Quaternion operator-(const Quaternion& v) const {
 		Quaternion result;
 		result.x = x - v.x;
 		result.y = y - v.y;
@@ -90,8 +91,16 @@ struct Quaternion {
 
 		return result;
 	}
-
+	Quaternion operator-() const { 
+		return Quaternion{-x, -y, -z, -w}; 
+	}
+	Quaternion operator*(float s) const { 
+		return Quaternion{x * s, y * s, z * s, w * s}; 
+	}
 };
+inline Quaternion operator*(float s, const Quaternion& q) { 
+	return Quaternion{q.x * s, q.y * s, q.z * s, q.w * s};
+}
 
 struct Sphere // 球
 {

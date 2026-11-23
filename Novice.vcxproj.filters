@@ -113,6 +113,9 @@
     <Filter Include="MT4\01\01_02">
       <UniqueIdentifier>{d46bd75f-65ec-4a69-b3d2-14d1643751f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MT4\01\01_03">
+      <UniqueIdentifier>{2bf1c8ca-794b-429f-b684-5f3a7b36518a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
@@ -195,6 +198,9 @@
     </ClCompile>
     <ClCompile Include="QuatenionDirection.cpp">
       <Filter>MT4\01\01_02</Filter>
+    </ClCompile>
+    <ClCompile Include="QuaternionRotate2.cpp">
+      <Filter>MT4\01\01_03</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -356,6 +362,9 @@
     </ClInclude>
     <ClInclude Include="QuatenionDirection.h">
       <Filter>MT4\01\01_02</Filter>
+    </ClInclude>
+    <ClInclude Include="QuaternionRotate2.h">
+      <Filter>MT4\01\01_03</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
